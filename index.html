@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCC Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h2>NCC Online Registration</h2>
+        <form id="registrationForm">
+            
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+       
+            <label for="document">Upload Document:</label>
+            <input type="file" id="document" name="document" accept=".pdf, .doc, .docx" required>
+
+          
+            <label for="module">Select Training Module:</label>
+            <select id="module" name="module" required>
+                <option value="leadership">Leadership Training</option>
+                <option value="physical">Physical Fitness</option>
+                <option value="marksmanship">Marksmanship</option>
+            </select>
+
+            
+            <button type="submit">Submit Registration</button>
+        </form>
+
+        
+        <div id="confirmationMessage" class="hidden">
+            <h3>Registration Successful!</h3>
+            <p>Thank you for registering for NCC activities. You will receive confirmation details shortly.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
